@@ -101,7 +101,7 @@ export const Game: React.FC = () => {
   const loadImages = async (team: string) => {
     // Load cloud image
     const cloudImage = new Image();
-    cloudImage.src = '/cloud.png';
+    cloudImage.src = '/cloud.png'; // This path is correct as Vite serves files from the public directory at the root
     await new Promise((resolve) => {
       cloudImage.onload = resolve;
     });
